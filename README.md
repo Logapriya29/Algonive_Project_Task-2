@@ -1,5 +1,4 @@
 Task 2 –Task Management System for small team
-📘 Project Overview
 
 * It extends the basic Task Manager by introducing user authentication, session-based data storage, and UI improvements for a more personalized task management experience.
 * The application allows users to create an account, log in securely, and manage their tasks independently.
@@ -63,6 +62,9 @@ Feature	Description
 🧱 Frontend: HTML5, CSS3, JavaScript (ES6)
 💾 Storage: Browser Local Storage
 🎨 UI Design: Custom CSS and responsive layouts
+
+https://www.linkedin.com/in/logapriya-jagan-821722267/
+( Use this Application to view the project )
 
 🏁 Outcome
 
