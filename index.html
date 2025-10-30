@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Task Management System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- AUTH -->
+    <div id="auth" class="card auth">
+      <h2 id="authTitle">Sign In</h2>
+
+      <div id="authForms">
+        <div id="signinForm">
+          <input id="loginEmail" placeholder="Email" />
+          <input id="loginPassword" placeholder="Password" type="password" />
+          <button id="loginBtn">Sign In</button>
+          <p>Don't have an account? <a href="#" id="toSignup">Sign up</a></p>
+        </div>
+
+        <div id="signupForm" style="display:none">
+          <input id="signupName" placeholder="Full name" />
+          <input id="signupEmail" placeholder="Email" />
+          <input id="signupPassword" placeholder="Password" type="password" />
+          <button id="signupBtn">Create account</button>
+          <p>Already have an account? <a href="#" id="toSignin">Sign in</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" style="display:none">
+      <header>
+        <div class="brand">
+          <div class="logo">TTM</div>
+          <div>
+            <h1>Task Management System</h1>
+            <div class="subtitle">Assign, track, and manage tasks for your team</div>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <span id="meName"></span>
+
+          <!-- 🔔 Notification Bell -->
+          <div class="notification-wrapper">
+            <div class="bell-icon" id="bellIcon">🔔<span id="bellCount" class="badge-count">0</span></div>
+            <div class="notifications-dropdown" id="notificationsDropdown">
+              <div class="notif-header">
+                <span>Notifications</span>
+                <button id="clearNotifications" title="Clear all">✖</button>
+              </div>
+              <ul id="notificationList"></ul>
+            </div>
+          </div>
+
+          <button id="logoutBtn" class="secondary">Logout</button>
+        </div>
+      </header>
+
+      <main>
+        <div class="grid">
+          <!-- FORM -->
+          <section class="card">
+            <h3>Create / Edit Task</h3>
+            <input id="taskTitle" placeholder="Title" />
+            <textarea id="taskDesc" placeholder="Description"></textarea>
+            <label>Assign to</label>
+            <select id="assigneeSelect"><option value="">-- Unassigned --</option></select>
+            <label>Due (optional)</label>
+            <input type="datetime-local" id="taskDue" />
+            <label>Status</label>
+            <select id="taskStatus">
+              <option value="pending">Pending</option>
+              <option value="in-progress">In Progress</option>
+              <option value="completed">Completed</option>
+            </select>
+
+            <div class="form-actions">
+              <button id="saveTaskBtn">Add Task</button>
+              <button id="clearTaskBtn" class="secondary">Clear</button>
+            </div>
+
+            <div style="margin-top:12px">
+              <button id="exportBtn" class="secondary">Export my tasks</button>
+              <input type="file" id="importFile" accept=".json" style="display:none" />
+              <button id="importBtn" class="secondary">Import tasks</button>
+              <button id="clearAllBtn" class="danger">Clear All Tasks (admin)</button>
+            </div>
+          </section>
+
+          <!-- LIST -->
+          <section>
+            <div class="card">
+              <div class="controls">
+                <div class="chip active" data-filter="all">All</div>
+                <div class="chip" data-filter="assignedToMe">Assigned to me</div>
+                <div class="chip" data-filter="pending">Pending</div>
+                <div class="chip" data-filter="in-progress">In Progress</div>
+                <div class="chip" data-filter="completed">Completed</div>
+                <input class="search" id="search" placeholder="Search..." />
+                <select id="sort">
+                  <option value="newest">Newest</option>
+                  <option value="dueAsc">Due—Soonest</option>
+                </select>
+              </div>
+
+              <ul id="taskList" class="task-list"></ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>© 2025 Task Management System — by Logapriya J</footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

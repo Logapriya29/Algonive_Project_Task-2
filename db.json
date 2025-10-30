@@ -1,0 +1,77 @@
+{
+  "tasks": [
+    {
+      "id": "aBRxMxyqLY-S9HE8vg4E1",
+      "title": "prepare dashboards",
+      "description": "using some tools like to visulaize",
+      "assigneeId": "HqwxpwalRgMSgKx0k316u",
+      "createdBy": "HqwxpwalRgMSgKx0k316u",
+      "status": "completed",
+      "dueDate": "2025-10-12T04:30",
+      "createdAt": 1760340434027,
+      "updatedAt": 1761716570688,
+      "reminded": false
+    },
+    {
+      "id": "qGVbTFlRln-jtRZ4X7kwt",
+      "title": "prepare  document",
+      "description": "usignvmnfjgvwa",
+      "assigneeId": "57MTEsgr0AZrcbEtQSwFK",
+      "createdBy": "HqwxpwalRgMSgKx0k316u",
+      "status": "pending",
+      "dueDate": "2025-10-30T11:04",
+      "createdAt": 1761626055030,
+      "updatedAt": 1761716441169,
+      "reminded": false
+    },
+    {
+      "id": "v21IeaUfVXZcYSOoW0-T0",
+      "title": "create models",
+      "description": "",
+      "assigneeId": "_icbfrlYJjDQWmEmTt-3z",
+      "createdBy": "HqwxpwalRgMSgKx0k316u",
+      "status": "pending",
+      "dueDate": "2025-10-20T11:00",
+      "createdAt": 1761716430922,
+      "updatedAt": 1761716430922,
+      "reminded": false
+    }
+  ],
+  "users": [
+    {
+      "id": "HqwxpwalRgMSgKx0k316u",
+      "name": "Alice Admin",
+      "email": "alice@example.com",
+      "passwordHash": "$2a$10$iUjken036i83VhVkak4UVeWyGx.o0b7gfVh3rsmVPZhCUyWI1aBaW",
+      "role": "admin"
+    },
+    {
+      "id": "57MTEsgr0AZrcbEtQSwFK",
+      "name": "Bob Dev",
+      "email": "bob@example.com",
+      "passwordHash": "$2a$10$XRtz2V55Os6.6Vq4ttiUgu8F2NU6Mxaf9VFCz1f9QJyWEbpShd00i",
+      "role": "member"
+    },
+    {
+      "id": "_icbfrlYJjDQWmEmTt-3z",
+      "name": "Carol QA",
+      "email": "carol@example.com",
+      "passwordHash": "$2a$10$68GVG9LKNfE5SQSRAZ6.Vu3imOqkv6/gaBXOtllkKTnnTTrUIpF5.",
+      "role": "member"
+    },
+    {
+      "id": "dksgBbcU3wOK2gZcSl-Bl",
+      "name": "loga",
+      "email": "loga@example",
+      "passwordHash": "$2a$10$4C7WSlHmVs5V0XaneV2TU.kYlOietbxm8VhWprvdgPhgCke0cw9V6",
+      "role": "member"
+    },
+    {
+      "id": "etKwFptJn77Ffl5bEuCWs",
+      "name": "John Dao",
+      "email": "john@example.com",
+      "passwordHash": "$2a$10$CK4NYj35t7/EOKhnTxVFIOk6EHB3BQLSH0Iy92zdCIzo1M.NJx1l.",
+      "role": "member"
+    }
+  ]
+}
