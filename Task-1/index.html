@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager — Intern Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">TM</div>
+      <div>
+        <h1>TASK MANAGER</h1>
+        <div class="subtitle">Add, edit, delete tasks • Reminders • Local storage</div>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card form-panel">
+        <h2>Add / Edit Task</h2>
+        <form id="taskForm">
+          <input type="hidden" id="taskId" />
+          <label for="title">Title</label>
+          <input id="title" required maxlength="100" placeholder="E.g. Finish report" />
+
+          <label for="description">Description</label>
+          <textarea id="description" placeholder="Short description..."></textarea>
+
+          <label for="dueDate">Due date & time</label>
+          <input type="datetime-local" id="dueDate" />
+
+          <div class="form-actions">
+            <button id="saveBtn" class="btn-primary">Add Task</button>
+            <button type="button" id="clearBtn" class="btn-secondary">Clear</button>
+          </div>
+        </form>
+
+        <div class="extras">
+          <button id="exportBtn" class="btn-secondary">Export Tasks</button>
+          <input type="file" id="importFile" accept=".json" hidden />
+          <button id="importBtn" class="btn-secondary">Import Tasks</button>
+          <button id="clearAllBtn" class="btn-danger">Clear All</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="card list-panel">
+          <div class="controls">
+            <div class="filter-tabs">
+              <div class="chip active" data-filter="all">All</div>
+              <div class="chip" data-filter="active">Active</div>
+              <div class="chip" data-filter="completed">Completed</div>
+              <div class="chip" data-filter="dueSoon">Due Soon</div>
+            </div>
+            
+            <div class="control-actions">
+              <input class="search" id="search" placeholder="Search tasks..." />
+              <select id="sort">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="dueAsc">Due—Soonest</option>
+                <option value="dueDesc">Due—Latest</option>
+              </select>
+            </div>
+          </div>
+          <ul class="task-list" id="taskList"></ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>© 2025 Task Manager — Created by Logapriya J</footer>
+  <script src="script.js"></script>
+</body>
+</html>
