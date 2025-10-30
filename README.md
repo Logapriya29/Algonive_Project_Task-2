@@ -66,6 +66,15 @@ Feature	Description
 https://www.linkedin.com/in/logapriya-jagan-821722267/
 ( Use this Application to view the project )
 
+🚀 How to Run
+
+Clone this repository:
+
+git clone https://github.com/Logapriya29/Algonive_Project_Task-2.git
+
+Open the folder in VS Code or any code editor.
+Launch index.html from the Task-1 or Task-2 directory in your browser.
+
 🏁 Outcome
 
 By completing Task 2, I implemented key features like authentication, data isolation, and UI enhancements, ensuring the Task Manager is more secure, personalized, and user-friendly.
